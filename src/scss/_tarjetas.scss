@@ -1,0 +1,29 @@
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .tarjeta {
+      @extend %tarjeta;
+        @include button;
+          &:hover {
+              background-color: #f4ff59;
+            }
+        }
+      }
+      .tarjeta_img {
+        width: 100%;
+      }
+      .tarjeta_titulo {
+        margin: 10px;
+        font-size: 25px;
+      }
+      .tarjeta_desc {
+        margin: 10px;
+      }
+  
+
+  
+
+  
+
+  

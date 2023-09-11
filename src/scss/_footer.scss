@@ -1,0 +1,60 @@
+.footer{
+    width: 100%;
+    background-color: $colorPrincipal;
+    position:fixed
+    .footerGrupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 180px;
+                }
+        }
+        h2{
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        .box p{
+            margin-bottom: 10px;
+        }
+        .redesSociales i{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 10px;
+            background-color:#f4ff59;
+            text-align: center;
+            transition: all 300ms ease;
+            &:hover{
+                color:#68B984;
+            }
+        }
+    }
+    .footerGrupo2{
+        background-color:#CFFDE1;
+        padding: 15px 10px;
+        text-align: center;
+        small{
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 750px){
+    .footer .footerGrupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

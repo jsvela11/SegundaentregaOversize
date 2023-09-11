@@ -1,0 +1,24 @@
+.contFormLogin {
+  @extend %formulario;
+    .formularioLogin {
+    display: flex;
+    flex-direction: column;
+    .hijoContLogin {
+        display: flex;
+        margin: 8px;
+        > label {
+            flex-basis: 20px;
+          }
+          input, textarea:focus {
+            outline: none;
+          }
+      }
+  }
+  .tarjeta_btn {
+    @include button;
+    &:hover {
+        background-color: #f4ff59;
+      }
+  }
+}
+  

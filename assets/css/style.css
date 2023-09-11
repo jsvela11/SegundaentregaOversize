@@ -1,0 +1,284 @@
+body {
+  background-color: #68B984;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #FED049;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+}
+.navbar .logo {
+  width: 48px;
+  margin: 10px;
+  position: absolute;
+  left: 10px;
+}
+.navbar > .fa-bars {
+  display: none;
+}
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.navbar > ul > li {
+  position: relative;
+}
+.navbar > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar > .fa-bars {
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .navbar > .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navbar > ul {
+    position: fixed;
+    flex-direction: column;
+    background-color: #FED049;
+    width: 250px;
+    height: 100vh;
+    justify-content: start;
+    padding-top: 60px;
+    align-items: center;
+    left: -300px;
+    transition: 0.3s;
+  }
+  .navbar > ul:hover {
+    left: 0;
+  }
+  .navbar .logo {
+    position: static;
+  }
+}
+.headerInicio {
+  background-image: url(../img/row-of-fashionable-clothing-on-hangers.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerInicio .headerInicioInfo {
+  color: white;
+}
+
+.subtitulo {
+  text-align: center;
+  padding: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tarjetas .tarjeta {
+  background-color: #CFFDE1;
+  border-radius: 5px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 7px 9px 5px 1px rgb(27, 51, 37);
+}
+.tarjetas .tarjeta_img {
+  width: 100%;
+}
+.tarjetas .tarjeta_titulo {
+  margin: 10px;
+  font-size: 25px;
+}
+.tarjetas .tarjeta_desc {
+  margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #FED049;
+}
+.footer .footerGrupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .footerGrupo1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerGrupo1 .box figure img {
+  width: 180px;
+}
+.footer .footerGrupo1 h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .footerGrupo1 .box p {
+  margin-bottom: 10px;
+}
+.footer .footerGrupo1 .redesSociales i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  background-color: #f4ff59;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .footerGrupo1 .redesSociales i:hover {
+  color: #68B984;
+}
+.footer .footerGrupo2 {
+  background-color: #CFFDE1;
+  padding: 15px 10px;
+  text-align: center;
+}
+.footer .footerGrupo2 small {
+  font-size: 15px;
+}
+
+@media (max-width: 750px) {
+  .footer .footerGrupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.contFormCont {
+  border: solid 2px;
+  padding: 20px;
+  border: solid 2px;
+  margin: 100px auto;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 7px 9px 5px 1px rgb(27, 51, 37);
+}
+.contFormCont .formularioContactos {
+  display: flex;
+  flex-direction: column;
+}
+.contFormCont .formularioContactos .hijoContContac {
+  display: flex;
+  margin: 8px;
+}
+.contFormCont .formularioContactos .hijoContContac > label {
+  flex-basis: 20px;
+}
+.contFormCont .formularioContactos .hijoContContac input, .contFormCont .formularioContactos .hijoContContac textarea:focus {
+  outline: none;
+}
+
+.contFormLogin {
+  border: solid 2px;
+  padding: 20px;
+  border: solid 2px;
+  margin: 100px auto;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 7px 9px 5px 1px rgb(27, 51, 37);
+}
+.contFormLogin .formularioLogin {
+  display: flex;
+  flex-direction: column;
+}
+.contFormLogin .formularioLogin .hijoContLogin {
+  display: flex;
+  margin: 8px;
+}
+.contFormLogin .formularioLogin .hijoContLogin > label {
+  flex-basis: 20px;
+}
+.contFormLogin .formularioLogin .hijoContLogin input, .contFormLogin .formularioLogin .hijoContLogin textarea:focus {
+  outline: none;
+}
+
+.tarjeta_btn {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  margin: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FED049;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tarjeta_btn:hover {
+  background-color: #f4ff59;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.h2Contactos {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.h1Login {
+  text-align: center;
+  font-size: 40px;
+}
+
+.h2Login {
+  text-align: center;
+  font-size: 40px;
+}
+
+.h1Nosotros {
+  font-size: 60px;
+  padding: 10px;
+  text-align: center;
+}
+
+.h3Nosotros {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.h1Productos {
+  text-align: center;
+  font-size: 60px;
+}
+
+.h3Productos {
+  text-align: center;
+  font-size: 60px;
+}

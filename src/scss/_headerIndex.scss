@@ -1,0 +1,16 @@
+.headerInicio {
+    background-image: url(../img/row-of-fashionable-clothing-on-hangers.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .headerInicioInfo {
+        color: white;
+      }
+  }
+.subtitulo {
+    text-align: center;
+    padding: 20px;
+  }

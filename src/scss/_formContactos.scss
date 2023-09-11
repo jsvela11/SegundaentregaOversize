@@ -1,0 +1,23 @@
+.contFormCont {
+  @extend %formulario;
+    .formularioContactos {
+        display: flex;
+        flex-direction: column;
+        .hijoContContac {
+            display: flex;
+            margin: 8px;
+            > label {
+                flex-basis: 20px;
+              }
+              input, textarea:focus {
+                outline: none;
+              }
+          }
+      }
+      .tarjeta_btn {
+        @include button;
+        &:hover {
+            background-color: #f4ff59;
+          }
+      }
+  }

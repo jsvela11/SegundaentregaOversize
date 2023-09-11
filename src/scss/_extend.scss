@@ -1,0 +1,17 @@
+%tarjeta{
+  background-color: #CFFDE1;
+  border-radius: 5px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: $colorSombra;
+  }
+  %formulario{
+    border: solid 2px;
+    padding: 20px;
+    border: solid 2px;
+    margin: 100px auto;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: $colorSombra;
+  }
